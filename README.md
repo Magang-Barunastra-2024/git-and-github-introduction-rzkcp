@@ -2,11 +2,48 @@
 
 # Git and Github Introduction
 
-| Nama              | Division | Sub-Division     |
+<<<<<<< HEAD
+| Nama | Division | Sub-Division |
 | ----------------- | -------- | ---------------- |
-| Ahmad Syauqi Reza | PGR      | Web Develeopment |
+| Ahmad Syauqi Reza | PGR | Web Develeopment |
+=======
+| Nama | Division | Sub-Division |
+| ----- | ---------- | ---------- |
+| Ahamd Syauqi Reza | PGR | Web Development |
+
+> > > > > > > aba83152f016a973a4354359922203be3b45538a
 
 ## Early Procedure
+
+1. Install Git
+
+```
+https://git-scm.com/downloads
+```
+
+2. Config Git
+
+```
+git config --global user.name (your username)
+git config --global user.email (your email)
+```
+
+3. Setup GitHub
+
+- Create an account on GitHub if you don’t already have one.
+- Generate an SSH key for secure authentication:
+
+```
+ssh-keygen -t ed25519 -C "your-email@example.com"
+```
+
+- Add the SSH key to GitHub:
+
+```
+cat ~/.ssh/id_ed25519.pub
+```
+
+- Go to GitHub > Settings > SSH and GPG keys, and paste the key.
 
 **1. Install Git**
 [Git](https://git-scm.com/downloads)
@@ -18,12 +55,124 @@ git config --global user.email (masukkan email)
 
 ## Create Repository
 
+- Go to your GitHub account.
+- Click New repository.
+- Provide a name, description, and choose visibility (Public or Private).
+- Optionally, initialize the repository with a README.
+
+or there are 2 options :
+
+a. From local repositories
+
+1.  Initialize
+
+```
+git init
+```
+
+2. Add files and commit
+
+```
+git add .
+git commit -m "Initial commit"
+```
+
+3. Link to GitHub
+
+```
+git remote add origin <repository-URL>
+```
+
+4. Push
+
+```
+git push -u origin main
+```
+
+b. With clone
+
+1. Create a repository on GitHub using the GUI.
+   Clone it locally
+
+```
+git clone <repository-URL>
+```
+
 ## Push File from Local to Github
+
+```
+git push -u origin main
+```
 
 ## Create New Branch in Github
 
+```
+cd /path/to/your/repository
+```
+
+2. **Create a New Branch**
+   Use the following command to create a branch:
+
+```
+git branch branch-name
+```
+
+3. **Switch to the New Branch**
+   Move to the newly created branch:
+
+```
+git checkout branch-name
+```
+
+Alternatively, you can combine the steps to create and switch:
+
+```
+git checkout -b branch-name
+```
+
+Push the New Branch to GitHub
+To push the branch to the remote repository:
+
+```
+git push -u origin branch-name
+```
+
+Verify the Branch
+You can list all branches in your repository using:
+
+```
+git branch
+```
+
+Local Branches: Only on your local machine.
+Remote Branches: On GitHub.
+
 ## Delete Branch in Github
+
+1. Select the branch you want to Delete
+
+```
+git checkout (branch name)
+```
+
+2. Write this command line
+
+```
+git branch -d (branch name)
+```
 
 ## Merging Branch in Github
 
+1. Move to the branch(have a file inside) that you want from main branch with this command line :
+
+```
+git checkout (branch name)
+```
+
+2. Merge branch with this command line
+
+```
+git merge (branch name to merge)
+
 ## Other Procedure
+```
