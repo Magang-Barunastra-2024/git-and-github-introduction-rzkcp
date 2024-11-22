@@ -90,6 +90,8 @@ git commit -m "write the description"
 git push -u origin main
 ```
 
+![My Image](image/push.png)
+
 ## Create New Branch in Github
 
 1. Create a New Branch
@@ -118,32 +120,36 @@ git push -u origin branch-name
 git branch
 ```
 
+![My Image](image/newbranch.png)
+
 ## Delete Branch in Github
 
-1. Select the branch you want to Delete
+1. Make sure you are in another branch that you want to delete by writing this command line
 
 ```
 git checkout (branch name)
 ```
 
-2. Write this command line
+2. Write this command line to delete the branch
 
 ```
 git branch -d (branch name)
 ```
 
+![My Image](image/deletebranch.png)
+
 ## Merging Branch in Github
 
-1. Move to the branch(have a file inside) that you want from main branch with this command line :
+1. Move to the branch that you want to merge with (for example main branch) with this command line :
 
 ```
 git checkout (branch name)
 ```
 
-2. Merge branch with this command line
+2. Merge the branch that you selected with this command line
 
 ```
-git merge (branch name to merge)
+git merge (branch name that you selected to merge)
 ```
 
-## Other Procedure
+![My Image](image/merge.png)
