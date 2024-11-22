@@ -9,7 +9,7 @@
 ## Early Procedure
 
 1. Install Git
-   pppp
+   (https://git-scm.com/downloads)
 
 ## Create Repository
 
