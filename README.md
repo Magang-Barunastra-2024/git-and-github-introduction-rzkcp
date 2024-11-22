@@ -14,7 +14,7 @@
 https://git-scm.com/downloads
 ```
 
-![My Image](image/install git.png)
+![My Image](image/instal.png)
 
 2. Config Git
 
@@ -25,7 +25,7 @@ git config --global user.email (your email)
 
 When its done, it will have user name and user gmail saved like this
 
-![My Image](image/config user gmail.png) 3. Setup GitHub
+![My Image](image/configl.png) 3. Setup GitHub
 
 - Create an account on GitHub if you don’t already have one.
 - Generate an SSH key for secure authentication:
@@ -34,8 +34,6 @@ When its done, it will have user name and user gmail saved like this
 ssh-keygen -t ed25519 -C "your-email@example.com"
 ```
 
-![My Image](image/ssh.png)
-
 - Copy the SSH key using this command line:
 
 ```
@@ -43,6 +41,8 @@ clip < ~/.ssh/id_ed25519.pub
 ```
 
 - Go to GitHub > Settings > SSH and GPG keys, and paste the key.
+
+![My Image](image/ssh.png)
 
 ## Create Repository
 
