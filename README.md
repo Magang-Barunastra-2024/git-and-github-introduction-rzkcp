@@ -2,16 +2,9 @@
 
 # Git and Github Introduction
 
-<<<<<<< HEAD
-| Nama | Division | Sub-Division |
+| Nama              | Division | Sub-Division     |
 | ----------------- | -------- | ---------------- |
-| Ahmad Syauqi Reza | PGR | Web Develeopment |
-=======
-| Nama | Division | Sub-Division |
-| ----- | ---------- | ---------- |
-| Ahamd Syauqi Reza | PGR | Web Development |
-
-> > > > > > > aba83152f016a973a4354359922203be3b45538a
+| Ahmad Syauqi Reza | PGR      | Web Develeopment |
 
 ## Early Procedure
 
@@ -37,21 +30,13 @@ git config --global user.email (your email)
 ssh-keygen -t ed25519 -C "your-email@example.com"
 ```
 
-- Add the SSH key to GitHub:
+- Copy the SSH key using this command line:
 
 ```
-cat ~/.ssh/id_ed25519.pub
+clip < ~/.ssh/id_ed25519.pub
 ```
 
 - Go to GitHub > Settings > SSH and GPG keys, and paste the key.
-
-**1. Install Git**
-[Git](https://git-scm.com/downloads)
-**2. Config Git**
-
-```bash git config --global user.name (masukkan username)
-git config --global user.email (masukkan email)
-```
 
 ## Create Repository
 
@@ -60,92 +45,68 @@ git config --global user.email (masukkan email)
 - Provide a name, description, and choose visibility (Public or Private).
 - Optionally, initialize the repository with a README.
 
-or there are 2 options :
+**Or there are 2 options using local file :**
 
 a. From local repositories
 
-1.  Initialize
+1.  First, make sure you have a folder with the same name as repository,Then Initialize on git bash
 
 ```
 git init
+git remote add origin (your SSH repository-URL)
+get branch -M main
 ```
 
-2. Add files and commit
+2. To check if local folder same with Github folder, write this command line
 
 ```
-git add .
-git commit -m "Initial commit"
+git pull origin (branch name)
 ```
 
-3. Link to GitHub
+b. Git clone
 
 ```
-git remote add origin <repository-URL>
-```
-
-4. Push
-
-```
-git push -u origin main
-```
-
-b. With clone
-
-1. Create a repository on GitHub using the GUI.
-   Clone it locally
-
-```
-git clone <repository-URL>
+git clone (your SSh repository-URL)
 ```
 
 ## Push File from Local to Github
 
+1. Make sure your folder has a file to be upload on Github
+2. Enter this command line on Git Bash
+
 ```
+git add.
+git commit -m "write the description"
 git push -u origin main
 ```
 
 ## Create New Branch in Github
 
-```
-cd /path/to/your/repository
-```
-
-2. **Create a New Branch**
+1. Create a New Branch
    Use the following command to create a branch:
 
 ```
-git branch branch-name
+git checkout -B (branch name)
 ```
 
-3. **Switch to the New Branch**
+2. Switch to the New Branch
    Move to the newly created branch:
 
 ```
-git checkout branch-name
+git checkout (branch name)
 ```
 
-Alternatively, you can combine the steps to create and switch:
-
-```
-git checkout -b branch-name
-```
-
-Push the New Branch to GitHub
-To push the branch to the remote repository:
+3. To push the new branch to GitHub, you can use this command line
 
 ```
 git push -u origin branch-name
 ```
 
-Verify the Branch
-You can list all branches in your repository using:
+4. To see al branches in your repository, write this command line :
 
 ```
 git branch
 ```
-
-Local Branches: Only on your local machine.
-Remote Branches: On GitHub.
 
 ## Delete Branch in Github
 
@@ -173,6 +134,6 @@ git checkout (branch name)
 
 ```
 git merge (branch name to merge)
+```
 
 ## Other Procedure
-```
