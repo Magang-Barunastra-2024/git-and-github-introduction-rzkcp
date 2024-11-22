@@ -14,7 +14,7 @@
 https://git-scm.com/downloads
 ```
 
-![My Image](image/instal.png)
+![My Image](image/install.png)
 
 2. Config Git
 
@@ -25,7 +25,7 @@ git config --global user.email (your email)
 
 When its done, it will have user name and user gmail saved like this
 
-![My Image](image/configl.png) 3. Setup GitHub
+![My Image](image/config.png) 3. Setup GitHub
 
 - Create an account on GitHub if you don’t already have one.
 - Generate an SSH key for secure authentication:
@@ -40,9 +40,11 @@ ssh-keygen -t ed25519 -C "your-email@example.com"
 clip < ~/.ssh/id_ed25519.pub
 ```
 
+![My Image](image/ssh.png)
+
 - Go to GitHub > Settings > SSH and GPG keys, and paste the key.
 
-![My Image](image/ssh.png)
+![My Image](image/addssh.png)
 
 ## Create Repository
 
@@ -74,6 +76,8 @@ b. Git clone
 ```
 git clone (your SSh repository-URL)
 ```
+
+![My Image](image/clone.png)
 
 ## Push File from Local to Github
 
