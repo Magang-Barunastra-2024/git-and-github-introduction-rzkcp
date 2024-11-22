@@ -8,8 +8,13 @@
 
 ## Early Procedure
 
-1. Install Git
-   (https://git-scm.com/downloads)
+**1. Install Git**
+[Git](https://git-scm.com/downloads)
+**2. Config Git**
+
+```bash git config --global user.name (masukkan username)
+git config --global user.email (masukkan email)
+```
 
 ## Create Repository
 
