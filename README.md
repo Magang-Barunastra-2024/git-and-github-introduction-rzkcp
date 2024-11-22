@@ -3,10 +3,11 @@
 
 | Nama  | Division        | Sub-Division  |
 | ----- | ---------- | ---------- |
-| Name here   | ELC/PGR | Sub-div |
+| Ahamd Syauqi Reza   | PGR | Web Development |
 
 ## Early Procedure
-
+1. Install Git
+   (https://git-scm.com/downloads)
 ## Create Repository
 
 ## Push File from Local to Github
